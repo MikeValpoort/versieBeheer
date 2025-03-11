@@ -3,11 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Halo Characters</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            gap: 20px;
+        }
+        .column {
+            flex: 1;
+            position: relative;
+            text-align: center;
+        }
+        .column a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+        }
+        .column img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
- 
-    <script src="js/main.js"></script>
+
+<div class="container">
+    <div class="column">
+        <a href="/arbiter.html">
+            <div class="label">Arbiter</div>
+            <img src="fotos/Schermafbeelding 2025-03-10 123054.png" alt="Noble Six">
+        </a>
+    </div>
+
+    <div class="column">
+        <a href="/nobleSix.html">
+            <div class="label">Noble six </div>
+            <img src="fotos/Schermafbeelding 2025-03-10 123112.png" alt="Arbiter">
+        </a>
+    </div>
+
+    <div class="column">
+        <a href="/masterChief.html">
+            <div class="label">Master Chief</div>
+            <img src="fotos/Schermafbeelding 2025-03-10 123128.png" alt="Master Chief">
+        </a>
+    </div>
+</div>
+
 </body>
 </html>
